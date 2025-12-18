@@ -11,15 +11,11 @@ teachers[4] = "Patrick";
 console.table(teachers);
 
 // 3. Rimuovi l'ultimo insegnante dall'array e salvalo nella variabile lastTeacher qui sotto
-const lastTeacher = teachers[6];
-
-teachers.pop();
+const lastTeacher = teachers.pop();
 console.table(teachers);
 
 // 4. Rimuovi il primo insegnante dall'array e salvalo nella variabile firstTeacher qui sotto
-const firstTeacher = teachers[0];
-
-teachers.shift();
+const firstTeacher = teachers.shift();
 console.table(teachers);
 
 // 5. Aggiungi un insegnante di nome 'Vanessa' alla fine dell'array teachers
@@ -37,14 +33,15 @@ console.log(lewisIndex);
 
 // 8. Verifica se l'array teachers è vuoto
 // e salva il risultato nella variabile isTeachersEmpty
-let outputMsg;
+// let outputMsg;
 
-if (teachers.length < 1) {
-  outputMsg = true;
-} else {
-  outputMsg = false;
-}
+// if (teachers.length === 0) {
+//   outputMsg = true;
+// } else {
+//   outputMsg = false;
+// }
 
-console.log("isTeachersEmpty", outputMsg);
+// console.log("isTeachersEmpty", outputMsg);
 
-const isTeachersEmpty = outputMsg;
+const isTeachersEmpty = teachers.length === 0;
+console.log(isTeachersEmpty);
